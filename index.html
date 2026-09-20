@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aprendé a enseñar español online a extranjeros | Vivir Online a los 50</title>
+<meta name="description" content="Capacitación individual de 2 horas para aprender a enseñar español online a extranjeros. Propuesta, alumnos, clases, precios y 30 días de acompañamiento personalizado.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Aprendé a enseñar español online a extranjeros">
+<meta property="og:description" content="Capacitación individual de 2 horas + 30 días de acompañamiento personalizado. Descubrí cómo empezar a enseñar español online.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/cristian.jpg">
+
+<!-- Favicon placeholder: reemplazar por tu propio favicon -->
+<link rel="icon" href="data:,">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ==========================================================
+   VIVIR ONLINE A LOS 50 — Landing: enseñar español online
+   ========================================================== */
+
+:root{
+  --navy: #0B2A4A;
+  --navy-deep: #071B32;
+  --blue: #1D6FC4;
+  --blue-deep: #144F8F;
+  --celeste: #8FD3F4;
+  --off: #F5F7FA;
+  --white: #FFFFFF;
+  --text: #2A3644;
+  --text-light: #5B6B7C;
+  --border: #E3E9EF;
+
+  --font-head: 'Sora', sans-serif;
+  --font-body: 'Work Sans', sans-serif;
+}
+
+*{ margin:0; padding:0; box-sizing:border-box; }
+
+html{ scroll-behavior:smooth; }
+
+body{
+  font-family: var(--font-body);
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,h2,h3{
+  font-family: var(--font-head);
+  color: var(--navy);
+  line-height: 1.25;
+}
+
+.container{
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-narrow{
+  max-width: 720px;
+}
+
+.section{
+  padding: 64px 0;
+}
+
+.section-title{
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+/* ---------- Reveal animation ---------- */
+.reveal{
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.is-visible{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- Buttons ---------- */
+.btn{
+  display: inline-block;
+  font-family: var(--font-head);
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 100px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary{
+  background: var(--blue);
+  color: var(--white);
+  box-shadow: 0 10px 24px rgba(29,111,196,0.28);
+}
+.btn-primary:hover{
+  background: var(--blue-deep);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(29,111,196,0.35);
+}
+
+.btn-large{
+  padding: 16px 36px;
+  font-size: 16px;
+}
+
+.btn-ghost{
+  background: transparent;
+  color: var(--navy);
+  border: 1.5px solid var(--border);
+}
+.btn-ghost:hover{
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.btn-small{
+  padding: 9px 18px;
+  font-size: 13px;
+}
+
+/* ---------- Header ---------- */
+.header{
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+.header-inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+}
+.brand{
+  font-family: var(--font-head);
+  font-weight: 700;
+  color: var(--navy);
+  font-size: 15px;
+  letter-spacing: 0.02em;
+}
+
+/* ---------- Hero ---------- */
+.hero{
+  background: linear-gradient(180deg, var(--off) 0%, var(--white) 100%);
+  padding: 48px 0 40px;
+}
+.hero-inner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 32px;
+}
+.eyebrow{
+  display: inline-block;
+  font-family: var(--font-head);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--blue);
+  background: rgba(29,111,196,0.08);
+  padding: 6px 14px;
+  border-radius: 100px;
+  margin-bottom: 18px;
+}
+.hero-text h1{
+  font-size: 30px;
+  margin-bottom: 16px;
+}
+.hero-sub{
+  color: var(--text-light);
+  font-size: 16px;
+  margin-bottom: 24px;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.trust-line{
+  margin-top: 14px;
+  font-size: 13px;
+  color: var(--text-light);
+}
+.hero-photo{
+  display: flex;
+  justify-content: center;
+}
+.photo-frame{
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 24px;
+  background: var(--off);
+  border: 1px solid var(--border);
+  box-shadow: 0 20px 40px rgba(11,42,74,0.12);
+}
+
+/* ---------- Trust strip ---------- */
+.trust-strip{
+  background: var(--navy);
+  padding: 20px 0;
+}
+.trust-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.trust-item{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 500;
+}
+.trust-icon{ font-size: 18px; }
+
+/* ---------- Problema ---------- */
+.problema{
+  background: var(--white);
+}
+.problema h2{
+  font-size: 26px;
+  margin-bottom: 18px;
+}
+.problema p{
+  color: var(--text-light);
+  margin-bottom: 18px;
+}
+.problem-list{
+  list-style: none;
+  margin: 20px 0;
+}
+.problem-list li{
+  padding: 10px 0 10px 28px;
+  position: relative;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+}
+.problem-list li::before{
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--blue);
+  font-weight: 700;
+}
+.problem-close{
+  font-weight: 600;
+  color: var(--navy);
+  margin-top: 20px;
+}
+
+/* ---------- Contenidos (cards) ---------- */
+.contenidos{
+  background: var(--off);
+}
+.cards-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+.content-card{
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 26px 22px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.content-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(11,42,74,0.08);
+}
+.card-number{
+  display: inline-block;
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: 13px;
+  color: var(--blue);
+  background: rgba(29,111,196,0.08);
+  padding: 4px 10px;
+  border-radius: 100px;
+  margin-bottom: 14px;
+}
+.content-card h3{
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.content-card p{
+  color: var(--text-light);
+  font-size: 14.5px;
+}
+
+/* ---------- Cómo funciona ---------- */
+.funciona{
+  background: var(--white);
+}
+.steps{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  position: relative;
+}
+.step{
+  padding-left: 54px;
+  position: relative;
+}
+.step-number{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: var(--white);
+  font-family: var(--font-head);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+}
+.step h3{
+  font-size: 17px;
+  margin-bottom: 4px;
+}
+.step p{
+  color: var(--text-light);
+  font-size: 14.5px;
+}
+.funciona-note{
+  text-align: center;
+  margin-top: 36px;
+  font-weight: 600;
+  color: var(--navy);
+  font-size: 15px;
+}
+
+/* ---------- Sobre mí ---------- */
+.sobre{
+  background: var(--off);
+}
+.sobre-grid{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+.sobre-photo .photo-frame{
+  max-width: 260px;
+}
+.sobre-text h2{
+  font-size: 26px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.sobre-text p{
+  color: var(--text-light);
+  margin-bottom: 14px;
+}
+
+/* ---------- Diferencial ---------- */
+.diferencial{
+  background: var(--white);
+  text-align: center;
+}
+.diferencial h2{
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+.diferencial p{
+  color: var(--text-light);
+  margin-bottom: 12px;
+}
+.diferencial-flow{
+  font-weight: 600;
+  color: var(--navy);
+  margin: 20px 0;
+  font-size: 15px;
+}
+.diferencial-tags{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.diferencial-tags span{
+  background: rgba(29,111,196,0.08);
+  color: var(--blue-deep);
+  padding: 8px 18px;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* ---------- Incluye ---------- */
+.incluye{
+  background: var(--off);
+}
+.incluye-card{
+  background: var(--navy);
+  color: var(--white);
+  border-radius: 24px;
+  padding: 40px 30px;
+  text-align: center;
+}
+.eyebrow-light{
+  background: rgba(255,255,255,0.12);
+  color: var(--celeste);
+}
+.incluye-card h2{
+  color: var(--white);
+  font-size: 34px;
+  margin-bottom: 24px;
+}
+.check-list{
+  list-style: none;
+  text-align: left;
+  max-width: 380px;
+  margin: 0 auto;
+}
+.check-list li{
+  padding: 10px 0 10px 30px;
+  position: relative;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+  font-size: 15px;
+}
+.check-list li::before{
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: var(--celeste);
+}
+.check-list li:last-child{
+  border-bottom: none;
+}
+
+/* ---------- Precio ---------- */
+.precio{
+  background: var(--white);
+  text-align: center;
+}
+.precio h2{
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+.precio-box{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+  background: var(--off);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 30px 20px;
+  margin-bottom: 20px;
+}
+.precio-item{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.precio-label{
+  font-size: 13px;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.precio-valor{
+  font-family: var(--font-head);
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--navy);
+}
+.precio-divider{
+  width: 60px;
+  height: 1px;
+  background: var(--border);
+}
+.precio-detalle{
+  color: var(--text-light);
+  margin-bottom: 26px;
+  font-size: 14.5px;
+}
+
+/* ---------- FAQ ---------- */
+.faq{
+  background: var(--off);
+}
+.faq-list{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.faq-item{
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px 20px;
+}
+.faq-item summary{
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--navy);
+  font-size: 15px;
+  list-style: none;
+  position: relative;
+  padding-right: 24px;
+}
+.faq-item summary::-webkit-details-marker{ display:none; }
+.faq-item summary::after{
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: -2px;
+  font-size: 20px;
+  color: var(--blue);
+  transition: transform 0.2s ease;
+}
+.faq-item[open] summary::after{
+  transform: rotate(45deg);
+}
+.faq-item p{
+  color: var(--text-light);
+  margin-top: 12px;
+  font-size: 14.5px;
+}
+
+/* ---------- CTA final ---------- */
+.cta-final{
+  background: var(--blue);
+  color: var(--white);
+  text-align: center;
+}
+.cta-final h2{
+  color: var(--white);
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+.cta-final p{
+  color: rgba(255,255,255,0.9);
+  margin-bottom: 24px;
+}
+.cta-final .btn-primary{
+  background: var(--white);
+  color: var(--blue-deep);
+}
+.cta-final .btn-primary:hover{
+  background: var(--off);
+}
+.cta-final .trust-line{
+  color: rgba(255,255,255,0.8);
+}
+
+/* ---------- Footer ---------- */
+.footer{
+  background: var(--navy-deep);
+  color: rgba(255,255,255,0.7);
+  padding: 32px 0;
+  text-align: center;
+  font-size: 13px;
+}
+.footer-inner{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+.brand-footer{
+  color: var(--white);
+}
+
+/* ==========================================================
+   TABLET / DESKTOP
+   ========================================================== */
+@media (min-width: 720px){
+  .section{ padding: 90px 0; }
+  .section-title{ font-size: 34px; }
+
+  .hero{ padding: 72px 0 60px; }
+  .hero-text h1{ font-size: 42px; }
+  .hero-sub{ font-size: 18px; }
+
+  .trust-grid{ grid-template-columns: repeat(4, 1fr); }
+  .trust-item{ justify-content: center; text-align: center; flex-direction: column; gap: 6px; }
+
+  .problema h2{ font-size: 32px; }
+
+  .cards-grid{ grid-template-columns: repeat(2, 1fr); }
+
+  .steps{ grid-template-columns: repeat(2, 1fr); gap: 40px 30px; }
+
+  .sobre-grid{ flex-direction: row; align-items: center; gap: 60px; text-align: left; }
+  .sobre-photo .photo-frame{ max-width: 300px; }
+  .sobre-text h2, .sobre-text p{ text-align: left; }
+
+  .incluye-card{ padding: 56px 60px; }
+  .incluye-card h2{ font-size: 40px; }
+
+  .precio-box{ flex-direction: row; justify-content: center; gap: 50px; padding: 40px 60px; }
+  .precio-divider{ width: 1px; height: 60px; }
+}
+
+@media (min-width: 1024px){
+  .cards-grid{ grid-template-columns: repeat(3, 1fr); }
+  .hero-text h1{ font-size: 48px; }
+}
+
+  </style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="header">
+  <div class="container header-inner">
+    <span class="brand">Vivir Online a los 50</span>
+    <a href="#precio" class="btn btn-ghost btn-small">Ver precio</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <span class="eyebrow">Capacitación individual</span>
+      <h1>¿Te gustaría enseñar español a extranjeros y convertir tus conocimientos en un servicio online?</h1>
+      <p class="hero-sub">En una capacitación individual de 2 horas te muestro cómo empezar, qué ofrecer, cómo conseguir alumnos, cómo organizar tus clases y cómo cobrar por tu servicio, aunque nunca hayas enseñado online.</p>
+      <a href="#" class="btn btn-primary btn-large whatsapp-link">QUIERO EMPEZAR</a>
+      <p class="trust-line">Capacitación individual · 2 horas · 30 días de acompañamiento</p>
+    </div>
+    <div class="hero-photo">
+      <!-- Reemplazar por una fotografía profesional de Cristian en assets/cristian.jpg -->
+      <img src="assets/cristian.jpg" alt="Cristian, docente de español online" class="photo-frame">
+    </div>
+  </div>
+</section>
+
+<!-- ============ ELEMENTOS DE CONFIANZA ============ -->
+<section class="trust-strip">
+  <div class="container trust-grid">
+    <div class="trust-item">
+      <span class="trust-icon">👤</span>
+      <span>Capacitación individual</span>
+    </div>
+    <div class="trust-item">
+      <span class="trust-icon">⏱️</span>
+      <span>2 horas</span>
+    </div>
+    <div class="trust-item">
+      <span class="trust-icon">📆</span>
+      <span>30 días de acompañamiento</span>
+    </div>
+    <div class="trust-item">
+      <span class="trust-icon">🌎</span>
+      <span>Orientado a enseñar a alumnos extranjeros</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EL PROBLEMA ============ -->
+<section class="section problema reveal">
+  <div class="container container-narrow">
+    <h2>Tal vez ya tenés lo más importante: sabés español.</h2>
+    <p>Muchas personas saben enseñar, explicar o comunicarse en español, pero no saben cómo transformar ese conocimiento en un servicio online para alumnos de otros países.</p>
+    <ul class="problem-list">
+      <li>No saben dónde encontrar alumnos</li>
+      <li>No saben cuánto cobrar</li>
+      <li>No saben cómo organizar las clases</li>
+      <li>No saben qué herramientas utilizar</li>
+      <li>No saben cómo presentar su servicio</li>
+      <li>No saben cómo empezar</li>
+    </ul>
+    <p class="problem-close">La capacitación es una forma de ordenar y acelerar esos primeros pasos.</p>
+  </div>
+</section>
+
+<!-- ============ QUÉ VAS A APRENDER ============ -->
+<section class="section contenidos reveal">
+  <div class="container">
+    <h2 class="section-title">En 2 horas vas a aprender cómo empezar</h2>
+    <div class="cards-grid">
+      <div class="content-card">
+        <span class="card-number">01</span>
+        <h3>Crear tu propuesta</h3>
+        <p>Cómo definir qué vas a ofrecer y cómo presentar tu servicio.</p>
+      </div>
+      <div class="content-card">
+        <span class="card-number">02</span>
+        <h3>Conseguir alumnos</h3>
+        <p>Dónde buscar potenciales alumnos y cómo comenzar a ofrecer tus clases.</p>
+      </div>
+      <div class="content-card">
+        <span class="card-number">03</span>
+        <h3>Organizar tus clases</h3>
+        <p>Cómo estructurar tus clases y qué herramientas online utilizar.</p>
+      </div>
+      <div class="content-card">
+        <span class="card-number">04</span>
+        <h3>Crear tus paquetes</h3>
+        <p>Cómo organizar clases individuales, paquetes y modalidades de trabajo.</p>
+      </div>
+      <div class="content-card">
+        <span class="card-number">05</span>
+        <h3>Definir tus precios</h3>
+        <p>Cómo establecer precios para alumnos de Argentina y del exterior.</p>
+      </div>
+      <div class="content-card">
+        <span class="card-number">06</span>
+        <h3>Cobrar desde el exterior</h3>
+        <p>Qué alternativas podés utilizar para recibir pagos de alumnos extranjeros.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CÓMO FUNCIONA ============ -->
+<section class="section funciona reveal">
+  <div class="container">
+    <h2 class="section-title">Cómo funciona</h2>
+    <div class="steps">
+      <div class="step">
+        <span class="step-number">1</span>
+        <h3>Reservás tu capacitación</h3>
+        <p>Coordinamos día y horario.</p>
+      </div>
+      <div class="step">
+        <span class="step-number">2</span>
+        <h3>Capacitación individual de 2 horas</h3>
+        <p>Trabajamos específicamente sobre tu situación y tus objetivos.</p>
+      </div>
+      <div class="step">
+        <span class="step-number">3</span>
+        <h3>Empezás a ponerlo en práctica</h3>
+        <p>Te llevás una orientación concreta para comenzar a ofrecer tu servicio.</p>
+      </div>
+      <div class="step">
+        <span class="step-number">4</span>
+        <h3>30 días de acompañamiento</h3>
+        <p>Podés consultarme dudas y recibir orientación durante tus primeros pasos.</p>
+      </div>
+    </div>
+    <p class="funciona-note">No es una clase grabada ni un PDF. Es acompañamiento personalizado.</p>
+  </div>
+</section>
+
+<!-- ============ QUIÉN SOY ============ -->
+<section class="section sobre reveal">
+  <div class="container sobre-grid">
+    <div class="sobre-photo">
+      <!-- Reemplazar por una fotografía profesional de Cristian en assets/cristian.jpg -->
+      <img src="assets/cristian.jpg" alt="Cristian" class="photo-frame">
+    </div>
+    <div class="sobre-text">
+      <h2>Soy Cristian</h2>
+      <p>Tengo 50 años y desde 2023 trabajo 100% online.</p>
+      <p>Soy docente de español y trabajo enseñando español a personas de otros países.</p>
+      <p>Después de empezar mi propia experiencia trabajando online, desarrollé esta capacitación para ayudar a otras personas que quieren comenzar pero no saben exactamente por dónde hacerlo.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DIFERENCIAL ============ -->
+<section class="section diferencial reveal">
+  <div class="container container-narrow">
+    <h2>No necesitás empezar sabiendo todo.</h2>
+    <p>No se trata de hacer un curso interminable ni de aprender decenas de herramientas.</p>
+    <p class="diferencial-flow">Qué ofrecer → cómo presentarlo → dónde encontrar alumnos → cómo organizar tu servicio → cómo empezar.</p>
+    <div class="diferencial-tags">
+      <span>Individual</span>
+      <span>Práctica</span>
+      <span>Personalizada</span>
+      <span>Orientada a comenzar</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUÉ INCLUYE ============ -->
+<section class="section incluye reveal">
+  <div class="container container-narrow">
+    <div class="incluye-card">
+      <span class="eyebrow eyebrow-light">Capacitación individual</span>
+      <h2>2 horas</h2>
+      <ul class="check-list">
+        <li>Capacitación personalizada</li>
+        <li>Orientación para crear tu propuesta</li>
+        <li>Herramientas para comenzar</li>
+        <li>Estrategias para conseguir alumnos</li>
+        <li>Organización de clases y paquetes</li>
+        <li>Orientación sobre precios y cobros</li>
+        <li><strong>30 días de acompañamiento personalizado</strong></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIOS (placeholder, activar cuando haya testimonios reales) ============ -->
+<section class="section testimonios reveal" hidden>
+  <div class="container">
+    <h2 class="section-title">Lo que dicen quienes ya empezaron</h2>
+    <div class="cards-grid testimonios-grid">
+      <!-- Agregar testimonios reales aquí cuando estén disponibles -->
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRECIO ============ -->
+<section class="section precio reveal" id="precio">
+  <div class="container container-narrow">
+    <h2>Empezá a construir tu servicio de español online</h2>
+    <div class="precio-box">
+      <div class="precio-item">
+        <span class="precio-label">Argentina</span>
+        <span class="precio-valor">$97.000</span>
+      </div>
+      <div class="precio-divider"></div>
+      <div class="precio-item">
+        <span class="precio-label">Exterior</span>
+        <span class="precio-valor">USD 80</span>
+      </div>
+    </div>
+    <p class="precio-detalle">Capacitación individual de 2 horas + 30 días de acompañamiento personalizado.</p>
+    <a href="#" class="btn btn-primary btn-large whatsapp-link">QUIERO EMPEZAR</a>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section faq reveal">
+  <div class="container container-narrow">
+    <h2 class="section-title">Preguntas frecuentes</h2>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>¿Necesito ser profesor de español?</summary>
+        <p>No necesariamente. La capacitación está pensada para personas que dominan el español y quieren aprender cómo estructurar y ofrecer un servicio online. Si tenés experiencia docente puede ser una ventaja, pero no es obligatoria para participar.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Necesito experiencia enseñando online?</summary>
+        <p>No. La capacitación está pensada justamente para quienes están dando sus primeros pasos.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿La capacitación es grupal?</summary>
+        <p>No. Es individual y personalizada.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Cuánto dura?</summary>
+        <p>2 horas.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Qué pasa después de la capacitación?</summary>
+        <p>Tenés 30 días de acompañamiento personalizado para resolver dudas y recibir orientación durante tus primeros pasos.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Puedo enseñar desde cualquier país?</summary>
+        <p>La capacitación está orientada al trabajo online y a alumnos extranjeros. La disponibilidad de medios de cobro puede variar según el país.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Cómo me inscribo?</summary>
+        <p>Haciendo clic en el botón de WhatsApp y escribiéndome para coordinar.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA FINAL ============ -->
+<section class="section cta-final reveal">
+  <div class="container container-narrow">
+    <h2>¿Querés empezar a enseñar español online?</h2>
+    <p>No necesitás tener todo resuelto antes de comenzar. Podés empezar aprendiendo cómo transformar tus conocimientos de español en un servicio, cómo presentarlo y cuáles son los primeros pasos para conseguir alumnos.</p>
+    <a href="#" class="btn btn-primary btn-large whatsapp-link">QUIERO EMPEZAR</a>
+    <p class="trust-line">Te respondo personalmente por WhatsApp.</p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <span class="brand brand-footer">Vivir Online a los 50</span>
+    <p>&copy; <span id="year"></span> Vivir Online a los 50. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script>
+// =====================================================
+// VIVIR ONLINE A LOS 50 — script.js
+// =====================================================
+
+// 1) COLOCÁ TU NÚMERO DE WHATSAPP ACÁ (con código de país, sin espacios ni signos)
+// Ejemplo Argentina: "5493XXXXXXXXX"
+const whatsappNumber = "5493385462953";
+
+const whatsappMessage = "Hola Cristian, quiero empezar mi formación para enseñar español a extranjeros";
+
+const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+document.querySelectorAll(".whatsapp-link").forEach(function (link) {
+  link.setAttribute("href", whatsappLink);
+  link.setAttribute("target", "_blank");
+  link.setAttribute("rel", "noopener noreferrer");
+});
+
+// 2) Año actual en el footer
+const yearEl = document.getElementById("year");
+if (yearEl) {
+  yearEl.textContent = new Date().getFullYear();
+}
+
+// 3) Animación de aparición suave al hacer scroll
+const revealEls = document.querySelectorAll(".reveal");
+
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(
+    function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+
+  revealEls.forEach(function (el) {
+    observer.observe(el);
+  });
+} else {
+  // Fallback para navegadores muy antiguos
+  revealEls.forEach(function (el) {
+    el.classList.add("is-visible");
+  });
+}
+
+  </script>
+</body>
+</html>
