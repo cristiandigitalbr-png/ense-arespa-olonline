@@ -916,19 +916,8 @@ const whatsappMessage = "Hola Cristian, quiero empezar mi formación para enseñ
 
 const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
-// El navegador interno de TikTok suele bloquear los links "https://wa.me/..."
-// para evitar que la persona salga de la app. Sin embargo, el esquema propio
-// de WhatsApp ("whatsapp://") no es un link web común, sino un protocolo de
-// app, y en la mayoría de los casos SÍ logra escaparse y abrir WhatsApp.
-function isTikTokInAppBrowser() {
-  const ua = navigator.userAgent || "";
-  return /TikTok|musical_ly|BytedanceWebview/i.test(ua);
-}
-
-const whatsappLinkApp = `whatsapp://send?phone=${whatsappNumber}&text=${encodeURIComponent(whatsappMessage)}`;
-
 document.querySelectorAll(".whatsapp-link").forEach(function (link) {
-  link.setAttribute("href", isTikTokInAppBrowser() ? whatsappLinkApp : whatsappLink);
+  link.setAttribute("href", whatsappLink);
 });
 
 // 2) Año actual en el footer
